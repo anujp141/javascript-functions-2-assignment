@@ -4,6 +4,23 @@
 // - Then uses the .filter() method to return a filtered array of books containing that genre.
 
 //Write filterByGenre(books, genre) below here:
+const books = [
+ 
+];
+function filterByGenre(bookArray, genre) {
+  const filteredBooks = bookArray.filter(book => book.genre === genre);
+  return filteredBooks;
+}
+
+const mysteryBooks = filterByGenre(books, "mystery");
+console.log(mysteryBooks);
+
+const romanceBooks = filterByGenre(books, "romance");
+console.log(romanceBooks);
+
+const sciFiBooks = filterByGenre(books, "sci-fi");
+console.log(sciFiBooks);
+
 
 
 const books = [
